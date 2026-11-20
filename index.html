@@ -8,21 +8,42 @@
 </head>
 <body>
     <main>
+    <form>
         <!-- Consigne 1 : en-tête du formulaire -->
+        <h2>Contactez-nous</h2>
+        <p>Remplissez le formulaire ci-dessous.</p>
 
         <!-- Consigne 6 : fieldset et legend -->
+        <fieldset>
+            <legend>Vos coordonnées</legend>
 
         <!-- Consigne 2 : champs Nom et E-mail avec label et required -->
+         <label>Nom</label>
+         <input type="text" name="nom" class="required">
+         <label>Email</label>
+         <input type="email" name="email" class="required">
+         <label>Message</label>
 
         <!-- Consigne 3 : select avec 3 options -->
+         <select name="sujet">
+             <option>Question générale</option>
+             <option>Problème Technique</option>
+             <option>Autre</option>
+         </select>
 
         <!-- Consigne 9 (optionnel) : remplacer le select par un input + datalist -->
 
         <!-- Consigne 4 : textarea avec required -->
+         <textarea name="message" class="required" rows="4"></textarea>
 
         <!-- Consigne 7 : champ Code postal avec pattern -->
+         <label>Code postal</label>
+         <input type="text" minlength="5" name="code" pattern="[A-B0-9]{6}" class="required">
 
         <!-- Consigne 5 : bouton d'envoi -->
+         <button type="submit">Envoyer</button>
+         </fieldset>
+    </form>
 
     </main>
 </body>
